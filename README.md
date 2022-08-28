@@ -4,7 +4,7 @@
 
 * 基于 uni-app 实现的“在线密码管理工具”前端工程
 * **PC端Web详细使用请见** [**操作手册**](https://github.com/enqiangjing/password-online-web/blob/main/options.md)
-* **Android详细使用请见** [**操作手册**](https://github.com/enqiangjing/password-online-web-uniapp/blob/main/options.md)
+* **Android详细使用请见** [**操作手册**](https://github.com/enqiangjing/password-online-uniapp/blob/main/options.md)
 
 ```shell
 # 项目介绍
