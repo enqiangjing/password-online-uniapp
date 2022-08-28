@@ -1,0 +1,272 @@
+@font-family: webfont !important;
+
+// ------ 样式初始化 ------
+//
+html,
+body,
+div,
+ul,
+li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+  overflow: hidden;
+}
+
+
+page {
+	height: 100%;
+}
+
+@font-face {
+  font-family: "webfont";
+  font-display: swap;
+  src: url("font/alph/webfont.eot"); /* IE9 */
+  src: url("font/alph/webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("font/alph/webfont.woff2") format("woff2"),
+    url("font/alph/webfont.woff") format("woff"),
+    /* chrome、firefox */ url("font/alph/webfont.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("font/alph/webfont.svg#webfont") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "webfont2";
+  font-display: swap;
+  src: url("font/alph/webfont.eot"); /* IE9 */
+  src: url("font/alph/webfont.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("font/alph/webfont.woff2") format("woff2"),
+    url("font/alph/webfont.woff") format("woff"),
+    /* chrome、firefox */ url("font/alph/webfont.ttf") format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("font/alph/webfont.svg#webfont") format("svg"); /* iOS 4.1- */
+}
+
+// ------过渡动画------
+//
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+//  ------ 全局通用 ------
+//
+.pbm0 {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.border-none {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.clean-float {
+  clear: both;
+  height: 0;
+}
+
+// ------ 全局通用::背景颜色 ------
+//
+.primary-bg {
+  background-color: #409eff;
+}
+
+.success-bg {
+  background-color: #67c23a;
+}
+
+.warning-bg {
+  background-color: #e6a23c;
+}
+
+.danger-bg {
+  background-color: #f56c6c;
+}
+
+.info-bg {
+  background-color: #909399;
+}
+
+.common-bg {
+  background-color: #f2f6fc;
+}
+
+.common-bg-r85 {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.color-fff {
+  color: #fff;
+}
+
+.color-primary {
+  color: #409eff;
+}
+
+// ------ 全局通用::字体大小 ------
+//
+.fs-20 {
+  font-size: 20px;
+  font-family: @font-family;
+}
+
+.fs-18 {
+  font-size: 18px;
+  font-family: @font-family;
+}
+
+.fs-16 {
+  font-size: 16px;
+  font-family: @font-family;
+}
+
+.fs-14 {
+  font-size: 14px;
+  font-family: @font-family;
+}
+
+.fs-12 {
+  font-size: 12px;
+  font-family: @font-family;
+}
+
+// ------全局通用::字体宽度
+//
+.fw-6 {
+  font-weight: 600;
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-2 {
+  font-weight: 200;
+}
+
+// ------全局铜通用::字间距------
+//
+.ls-8 {
+  letter-spacing: 8px;
+}
+
+.ls-6 {
+  letter-spacing: 6px;
+}
+
+.ls-4 {
+  letter-spacing: 4px;
+}
+
+.ls-2 {
+  letter-spacing: 2px;
+}
+
+// ------圆角------
+//
+.br-20 {
+  border-radius: 20px;
+}
+
+.br-8 {
+  border-radius: 8px;
+}
+
+.br-4 {
+  border-radius: 4px;
+}
+
+// ------ 弹性对齐 ------
+//
+.cc-display {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.cs-display {
+  justify-content: center;
+  align-items: flex-start;
+  display: -webkit-flex;
+}
+
+.ce-display {
+  justify-content: center;
+  align-items: flex-end;
+  display: -webkit-flex;
+}
+
+.se-display {
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: -webkit-flex;
+}
+
+.sc-display {
+  justify-content: flex-start;
+  align-items: center;
+  display: -webkit-flex;
+}
+
+.ss-display {
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: -webkit-flex;
+}
+
+.ec-display {
+  justify-content: flex-end;
+  align-items: center;
+  display: -webkit-flex;
+}
+
+// ------ 滚动条 ------
+//
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px rgba(29, 96, 151, 0.45);
+  background: #409eff;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(92, 169, 211, 0);
+  border-radius: 0;
+  background: rgba(92, 169, 211, 0);
+}
+
+// ------ 弹框 ------
+//
+#message_box_outside {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 50%为自身尺寸的一半 */
+  z-index: 2000;
+}
+
+.message_box_inside {
+  margin-top: 10px;
+  color: white;
+  min-height: 40px;
+  min-width: 200px;
+  border-radius: 10px;
+}
